@@ -10,8 +10,7 @@ data = pd.read_csv("melb_data.csv")
 y = data.Price
 melb_predictors = data.drop(['Price'], axis=1)
 X = melb_predictors.select_dtypes(exclude=['object'])
-X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size=0.8, test_size=0.2,
-                                                      random_state=0)
+X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size=0.8, test_size=0.2, random_state=0)
 
 
 def score_dataset(X_train, X_valid, y_train, y_valid):
