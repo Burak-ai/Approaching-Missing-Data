@@ -51,7 +51,7 @@ print(score_dataset(imputed_X_train, imputed_X_valid, y_train, y_valid))
 
 
 
-#               Approach 3 (An Extension to Imputation)
+#                Approach 3 (An Extension to Imputation)
 X_train_plus = X_train.copy()
 X_valid_plus = X_valid.copy()
 
